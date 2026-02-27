@@ -1,0 +1,22 @@
+int photoPin = A0;
+int toggle_motor = A1;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(photoPin, INPUT);
+  pinMode(toggle_motor, OUTPUT);
+}
+
+void loop() {
+  delay(100);
+  int light_level = analogRead(photoPin);
+  Serial.println(light_level);
+
+  if (light_level > 25) {
+    digitalWrite(toggle_motor, HIGH);   // Motor ON
+  } 
+  else {
+    digitalWrite(toggle_motor, LOW);    // Motor OFF
+  }
+
+}
