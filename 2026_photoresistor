@@ -7,16 +7,20 @@ void setup() {
   pinMode(toggle_motor, OUTPUT);
 }
 
+void exit() {
+  while(1);
+}
+
 void loop() {
-  delay(100);
+  delay(1000);
   int light_level = analogRead(photoPin);
   Serial.println(light_level);
 
-  if (light_level > 25) {
-    digitalWrite(toggle_motor, HIGH);   // Motor ON
+  if (light_level > 200) {
+    digitalWrite(toggle_motor, LOW);   // Motor ON
   } 
   else {
-    digitalWrite(toggle_motor, LOW);    // Motor OFF
+    digitalWrite(toggle_motor, HIGH);    // Motor OFF
+    exit();
   }
-
 }
