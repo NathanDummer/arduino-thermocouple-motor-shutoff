@@ -1,0 +1,14 @@
+Primary Editors:
+	Nathan Drummer
+	Calvin Keyser
+
+Objective:
+	This year utilized an exothermic reaction stopping mechanism;
+	As the reaction proceeds, the heat in an area increases, which is measured by a thermocouple
+	and supplied to the arduino. Once the temperature change is large enough, the arduino
+	signals the stop and shuts off the motor.
+
+Notes:
+	This car had significant difficulties measuring thermocouple values, 
+	which led to difficulty signaling the stop properly. After extensive testing, 
+	blocking EM radiation and physically stabilizing the arduino was somewhat helpful.
