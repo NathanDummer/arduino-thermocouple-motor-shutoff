@@ -5,7 +5,7 @@ Primary Editors:
 Objective:
 	This year used an "elephant toothpaste" stopping mechanism, and this code controls 
 	the arduino according to a photoresistor reading values directly from an attached laser
-	in an eclosed box. The reaction fills a chamber with a mostly opaque fluid, blocking the laser, signaling the
+	in an enclosed box. The reaction fills a chamber with a mostly opaque fluid, blocking the laser, signaling the
 	arduino to shut off the motor.
 
 Key Details:
